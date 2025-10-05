@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário De Validação</title>
 
 </head>
 <style>
@@ -12,7 +12,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content:left;
+        justify-content: left;
 
     }
 
@@ -23,16 +23,22 @@
         border-radius: 4px;
         align-items: left;
     }
-    label, input {
-  display: inline-block;
-  vertical-align: middle; /* alinha verticalmente os elementos */
-}
 
-.container {
-  display: flex;
-  align-items: center; /* alinha verticalmente */
-  gap: 10px; /* espaçamento entre label e input */
-}
+    label,
+    input {
+        display: inline-block;
+        vertical-align: middle;
+        /* alinha verticalmente os elementos */
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        /* alinha verticalmente */
+        gap: 10px;
+        /* espaçamento entre label e input */
+    }
+
     button {
         padding: 10px 20px;
         background-color: #ff92d5;
@@ -52,49 +58,47 @@
 
     <form id="form-endereco">
 
-        <div>
-            <li>
+        
 
-                <ul>
-                    <label>
-                        CEP
-                        <input id="cep" name="cep" type="text" placeholder="00000-000">
-                    </label>
-                </ul>
-
-
-                <ul>
-                    <label>
-                        Logradouro
-                        <input id="logradouro" name="logradouro" type="text" placeholder="Rua Exemplo">
-                    </label>
-                </ul>
+            <ul>
+                <label>
+                    CEP
+                    <input id="cep" name="cep" type="text" placeholder="00000-000">
+                </label>
+            </ul>
 
 
-                <ul>
-                    <label>
-                        Número
-                        <input id="numero" name="numero" type="number" placeholder="123">
-                    </label>
-                </ul>
+            <ul>
+                <label>
+                    Logradouro
+                    <input id="logradouro" name="logradouro" type="text" placeholder="Rua Exemplo">
+                </label>
+            </ul>
 
 
-                <ul>
-                    <label>
-                        UF
-                        <input id="uf" name="uf" type="text" placeholder="SP">
-                    </label>
-                </ul>
+            <ul>
+                <label>
+                    Número
+                    <input id="numero" name="numero" type="number" placeholder="123">
+                </label>
+            </ul>
 
 
-                <ul>
-                    <label>
-                        Complemento
-                        <input id="complemento" name="complemento" type="text" placeholder="Apto, bloco, etc.">
-                    </label>
-                </ul>
-            </li>
-        </div>
+            <ul>
+                <label>
+                    UF
+                    <input id="uf" name="uf" type="text" placeholder="SP">
+                </label>
+            </ul>
+
+
+            <ul>
+                <label>
+                    Complemento
+                    <input id="complemento" name="complemento" type="text" placeholder="Apto, bloco, etc.">
+                </label>
+            </ul>
+       
 
 
         <button type="submit">Enviar</button>

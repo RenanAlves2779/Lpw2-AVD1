@@ -27,8 +27,8 @@ form.addEventListener('submit', e => {
         alert('Por favor, preencha o campo UF.');
         return;
     }
-    if (!/^[a-zA-Z]{2}$/.test(ufInput.value)) {
-        alert('Por favor, preencha o campo UF com exatamente duas letras.');
+    if (!/^[A-Z]{2}$/.test(ufInput.value)) {
+        alert('Por favor, preencha o campo UF com exatamente duas letras Maiúsculas.');
         return;
     }
     alert('Formulário enviado com sucesso!');
